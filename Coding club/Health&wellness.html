@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Health & Wellness | Hero Section</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .hero-section {
+      background-image: url('https://ciiblog.in/wp-content/uploads/2024/03/Yoga-Blog-Cover-scaled-1-1536x864.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+    }
+    .hero-overlay {
+      background: rgba(255, 255, 255, 0.85);
+      border-radius: 16px;
+      padding: 60px 30px;
+      max-width: 700px;
+      margin: auto;
+    }
+    .btn-custom {
+      padding: 12px 30px;
+      font-size: 1.1rem;
+      border-radius: 30px;
+    }
+  </style>
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">LocalFix</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active" href="home-services.html">Home Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="education-tutoring.html">Education & Tutoring</a></li>
+        <li class="nav-item"><a class="nav-link" href="Health&wellness.html">Health & Wellness</a></li>
+        <li class="nav-item"><a class="nav-link" href="personal-services.html">Personal Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+</nav> <br><br> 
+  <!-- Hero Section -->
+  <section class="hero-section">  
+    <div class="container text-center">
+      <div class="hero-overlay shadows">
+        <h1 class="display-5 fw-bold text-dark">Your Wellness, Our Priority</h1>
+        <p class="lead mt-3 text-secondary">
+          Discover expert yoga instructors, fitness trainers, dieticians, and mental health professionals – all in one place.
+        </p><br>
+
+        <button style="color: blueviolet;background-color: lightblue;" onclick="myFunction()"><b>Why choose us?</b></button><br><br>       <!-- Code for OnClick event -->
+        <p id="demo"></p>
+        <script>
+        function myFunction() 
+        {
+            document.getElementById("demo").innerHTML  =  "<p style='color: #DC3545;'><b>1] Expert Guidance:</b> Work with certified professionals.</p>" +
+            "<p style='color: #28A745;'><b>2] Personalized Approach:</b> Tailored plans for individual needs.</p>" +
+            "<p style='color: #007BFF;'><b>3] Holistic Wellness:</b> Nurture body, mind and spirit.</p>";
+
+        }
+        </script><br><br>
+
+        <button style="color:  #644117;background-color: yellow;"><b>💁🏻Services Section</b></button><br><br>
+            <a href="Yoga_instructors.html" target="_blank">   <!--Code for clickable images taking us to different pages-->
+                <img src="https://images.squarespace-cdn.com/content/v1/589d399bcd0f6820a510fd73/1600083235673-12BU670AEOK9DM1TTLII/yoga+instructors+course+become+a+yoga+teacher.jpg?format=1500w" alt="Yoga instructors" width="300" style="cursor: pointer;">
+            </a>
+            <p style="text-align: center; font-weight: bold; color: black;">Yoga Instructors : Expert Yoga instructors for mind-body balance.</p><br>
+
+            <a href="Fittness Trainers.html" target="_blank">
+                <img src="https://www.fitking.in/BlogImage/25254.jpg" alt="Fittness Trainers" width="300" style="cursor: pointer;">
+            </a>
+            <p style="text-align: center; font-weight: bold; color: black;">Fittness Trainers : Personalized workout plans and coatching</p><br>
+
+            <a href="Dieticians_Nutritionists.html" target="_blank">
+                <img src="https://www.husson.edu/online/blog/2024/02/iStock-1567549846.jpg" alt="Dieticians/Nutritionists" width="300" style="cursor: pointer;">
+            </a>
+            <p style="text-align: center; font-weight: bold; color: black;">Dieticians and Nutritionists : Customized nutrition plans for optimum health.</p>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap JS (optional) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>LocalFix</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    .background-slider {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      animation: bgChange 15s infinite;
+      background-size: cover;
+      background-position: center;
+    }
+
+    @keyframes bgChange {
+      0%   { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmbHVFjAVw36XnzO4rL5eMlaRrzOKZZQCggg&s'); }
+      33%  { background-image: url('https://www.peppyocean.com/wp-content/uploads/2021/12/home-service-app-like-housejoy.png'); }
+      66%  { background-image: url('https://mobisoftinfotech.com/resources/wp-content/uploads/2018/10/apps.png'); }
+      100% { background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGltOGfD1tI88z8_rXlPHfuz8kywMkklV6XQ&s'); }
+    }
+
+    .content {
+      padding: 60px 20px;
+    }
+
+    .service-card {
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    .card-img-top {
+      height: 250px;
+      object-fit: cover;
+    }
+
+    .card:hover {
+      transform: scale(1.02);
+      transition: 0.3s ease-in-out;
+    }
+
+    h1 {
+      text-align: center;
+      color: white;
+      text-shadow: 2px 2px 5px #000;
+      margin-bottom: 40px;
+    }
+  </style>
+</head>
+<body>
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">LocalFix</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="home-services.html">Home Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="education-tutoring.html">Education & Tutoring</a></li>
+          <li class="nav-item"><a class="nav-link" href="Health&wellness.html">Health & Wellness</a></li>
+          <li class="nav-item"><a class="nav-link" href="personal-services.html">Personal Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a>   </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="background-slider"></div>
+
+  <div class="container content">
+    <h1>Home Services</h1>
+
+<div class="container text-white text-center mb-4" style="text-shadow: 1px 1px 3px black;">
+  <h2>Welcome to LocalFix</h2>
+  <p>
+    Struggling to find trusted electricians, plumbers, or carpenters nearby?
+    <br>We connect you with verified professionals right in your neighborhood. Fast, reliable, and easy booking!
+  </p>
+</div>
+
+
+    <div class="card service-card shadow">
+      <img src="https://cdn.prod.website-files.com/65df98d5da035adba1854f59/663939321a46c1430f3ce99e_circu%20(1).webp" class="card-img-top" alt="Electrician">
+      <div class="card-body text-center">
+        <h5 class="card-title">Electricians</h5>
+        <a href="electricians.html" class="btn btn-primary w-100">View Electricians</a>
+      </div>
+    </div>
+
+    <div class="card service-card shadow">
+      <img src="https://hometriangle.com/imagecache/media/10144/image.webp" class="card-img-top" alt="Plumber">
+      <div class="card-body text-center">
+        <h5 class="card-title">Plumbers</h5>
+        <a href="plumber.html" class="btn btn-success w-100">View Plumbers</a>
+      </div>
+    </div>
+
+    <div class="card service-card shadow">
+      <img src="https://webtk.sfastservices.com/blogimg/Carpenter%20Services-Sfastservices.jpeg" class="card-img-top" alt="Carpenter">
+      <div class="card-body text-center">
+        <h5 class="card-title">Carpenters</h5>
+        <a href="carpenter.html" class="btn btn-warning w-100">View Carpenters</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center">
+  <div class="alert alert-info mt-3 w-75">
+    <h5 class="text-center">Payment Details:</h5>
+    <ul>
+      <li>Minimum service charge: ₹300</li>
+      <li>Additional charges apply if extra materials or time is needed</li>
+      <li>Advance may be collected by serviceman upon arrival</li>
+    </ul>
+    <p class="text-danger text-center">
+      <strong>Note:</strong> Please do not cancel and contact the serviceman directly. Doing so may cause you to lose access to platform support.
+    </p>
+  </div>
+</div>
+
+</body>
+</html>

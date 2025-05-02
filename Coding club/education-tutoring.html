@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>EduConnect - Tutors Near You</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #f1f8ff, #eaf6f6);
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #b1b0bc, #b1b0bc);
+      color: white;
+      padding: 25px;
+      text-align: center;
+    }
+
+    .container {
+      padding: 30px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #023e8a;
+    }
+
+    .categories {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .card {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      margin: 15px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .card img {
+  width: 100%;
+  height: 180px; 
+  object-fit: cover;
+  }
+
+
+    .card-content {
+      padding: 20px;
+      text-align: center;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #0077b6;
+    }
+
+    .card-content p {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .card-content button {
+      margin-top: 15px;
+      background: #00b4d8;
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .card-content button:hover {
+      background: #0077b6;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #b0b1bc;
+      color: #023e8a;
+      margin-top: 30px;
+    } 
+    .navbar {
+  background: linear-gradient(to right, #28a745, #218838);
+}
+
+.navbar-brand {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+  transform: scale(1.05);
+}  
+  </style>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+<body>
+
+<header>
+  <h1>Education & Tutoring</h1>
+  <p>Find trusted tutors near you – from academics to arts!</p>
+</header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#">LocalFix</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="home-services.html">Home Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="education-tutoring.html">Education & Tutoring</a></li>
+          <li class="nav-item"><a class="nav-link" href="Health&wellness.html">Health & Wellness</a></li>
+          <li class="nav-item"><a class="nav-link" href="personal-services.html">Personal Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+<div class="container">
+  <h2>Explore Tutoring Categories</h2>
+  <div class="categories">
+    
+    <!-- Home Tutor -->
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwMvwRRZ8YTLThhSUwEND-bMhiSvZcOZCgYw&s" alt="Home Tutor">
+      <div class="card-content">
+        <h3>Home Tutor</h3>
+        <p>One-on-one home tutoring for school & college students.</p>
+        <button onclick="location.href='home.html'">View Tutors</button>      
+      </div>
+    </div>
+
+    <!-- Dance Instructor -->
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu6mW906hAgvvePS6LPAckLx-NCikCeBLYHA&s" alt="Dance Instructor">
+      <div class="card-content">
+        <h3>Dance Instructor</h3>
+        <p>Bollywood, classical, hip-hop – groove with the best!</p>
+        <button onclick="location.href='dance.html'">View Tutors</button>
+      </div>
+    </div>
+
+    <!-- Art & Craft -->
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZXJ9OQEQTs0p-dInAP2zfERTi4L9HMC8XUQ&s" alt="Art & Craft">
+      <div class="card-content">
+        <h3>Art & Craft</h3>
+        <p>Painting, drawing, clay, and creative activities.</p>
+        <button onclick="location.href='art-craft.html'">View Tutors</button>
+      </div>
+    </div>
+
+      <!-- Home Tutor -->
+      <div class="card">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwMvwRRZ8YTLThhSUwEND-bMhiSvZcOZCgYw&s" alt="Home Tutor">
+        <div class="card-content">
+          <h3>Coding Tutor</h3>
+          <p>Master coding from the comfort of your home with expert online tutors in Java, Python, C, and more.</p>
+          <button onclick="location.href='Coding.html'">View Tutors</button>      
+        </div>
+      </div>
+
+  </div>
+</div>
+
+<footer>
+  <p>&copy; 2025 EduConnect. Empowering education through local expertise.</p>
+</footer>
+
+
+</body>
+</html>

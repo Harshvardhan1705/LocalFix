@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tattoo Artists- ArtAura</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> 
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: #121212;
+      color: #f0f0f0;
+    }
+
+    header {
+      background: linear-gradient(135deg, #000000, #434343);
+      color: white;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.8rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .tattoo-card {
+      background: #1f1f1f;
+      border-radius: 12px;
+      padding: 25px;
+      margin-bottom: 25px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .tattoo-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+    }
+
+    .tattoo-card h3 {
+      color: #ff5252;
+      font-size: 1.5rem;
+    }
+
+    .tattoo-card p {
+      margin: 8px 0;
+      color: #ccc;
+    }
+
+    .tattoo-card button {
+      margin-top: 15px;
+      background: linear-gradient(135deg, #ff4081, #c51162);
+      border: none;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 6px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .tattoo-card button:hover {
+      background: linear-gradient(135deg, #c51162, #880e4f);
+    }
+
+    .navbar {
+      background: linear-gradient(to right, #212121, #424242);
+    }
+
+    .navbar-brand {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #ff5252 !important;
+    }
+
+    .nav-link {
+      color: #fff !important;
+      font-weight: 500;
+      transition: all 0.3s ease-in-out;
+    }
+
+    .nav-link:hover {
+      color: #ff8a80 !important;
+      transform: scale(1.05);
+    }
+    @media (min-width: 768px) {
+      .artist-card {
+        flex-direction: row;
+      }
+
+      .artist-image {
+        width: 300px;
+        height: auto;
+      }
+
+      .artist-content {
+        flex: 1;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<header>
+  <h1>Tattoo Artists</h1>
+  <p>Ink Your Story with the Best in Town</p>
+</header>
+
+<nav class="navbar navbar-expand-lg navbar-dark shadow">
+  <div class="container">
+    <a class="navbar-brand" href="#">ArtAura</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Personal-services</a></li>
+        <li class="nav-item"><a class="nav-link" href="mehandi.html">Mehandi Artists</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tattoo.html">Tattoo Artists</a></li>
+        <li class="nav-item"><a class="nav-link" href="wedding.html">Wedding Planners</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+    <div class="tattoo-card">
+      <img src="https://tse4.mm.bing.net/th?id=OIP.XRxy-P4V2x1wa4Lp38zs0AHaGa&pid=Api&P=0&h=180" alt="Aryan Malhotra" class="artist-img">
+      <h3>Mr. Aryan Malhotra</h3>
+      <p>Specializes in Black & Grey Realism</p>
+      <p>Experience: 11 years</p>
+      <button onclick="bookNow('Mr. Aryan Malhotra')">Book Now</button>
+    </div>
+    <div class="tattoo-card">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.VP6LozSNVr7PTM0OksvSWAAAAA&pid=Api&P=0&h=180" alt="Tanya Singh" class="artist-img">
+      <h3>Ms. Tanya Singh</h3>
+      <p>Minimalist & Fine Line Tattoos</p>
+      <p>Experience: 8 years</p>
+      <button onclick="bookNow('Ms. Tanya Singh')">Book Now</button>
+    </div>
+    <div class="tattoo-card">
+      <img src="https://tse2.mm.bing.net/th?id=OIP.M7G2CDIgnZ9_Fw3UzwLp8gHaJQ&pid=Api&P=0&h=180" alt="Rohan Das" class="artist-img">
+      <h3>Mr. Rohan Das</h3>
+      <p>Neo-Traditional & Color Work</p>
+      <p>Experience: 10 years</p>
+      <button onclick="bookNow('Mr. Rohan Das')">Book Now</button>
+    </div>
+    <div class="tattoo-card">
+      <img src="https://tse1.mm.bing.net/th?id=OIP.LPFlvjN0OhFt0EgoFv_wNQHaIG&pid=Api&P=0&h=180" alt="Kiara Mehta" class="artist-img">
+      <h3>Ms. Kiara Mehta</h3>
+      <p>Watercolor & Abstract Art</p>
+      <p>Experience: 6 years</p>
+      <button onclick="bookNow('Ms. Kiara Mehta')">Book Now</button>
+    </div>
+  </div>
+  
+
+<script>
+  function bookNow(artistName) {
+    const name = prompt(`Booking a session with ${artistName}:\nPlease enter your full name:`);
+    if (name) {
+      alert(`Thanks, ${name}! Your tattoo session with ${artistName} is scheduled.`);
+    } else {
+      alert("Booking cancelled.");
+    }
+  }
+</script>
+</body>
+</html>

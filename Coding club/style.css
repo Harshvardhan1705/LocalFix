@@ -1,0 +1,224 @@
+/* whole page body */
+body {
+  background-color: #E6E6FA;
+}
+
+
+/* styling for chatbot */
+  .chat-container {
+    width: 400px;
+    margin: 0 auto 50px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    background-color: #6a5acd;
+    color: #fff;
+    padding: 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .chat-box {
+    height: 300px;
+    padding: 15px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .chat-box .user-message,
+  .chat-box .bot-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  
+  .chat-box .user-message {
+    background-color: #e6e6fa;
+    text-align: right;
+  }
+  
+  .chat-box .bot-message {
+    background-color: #f5f5f5;
+    text-align: left;
+  }
+  
+  .chat-input {
+    display: flex;
+    padding: 10px;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .chat-input button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #6a5acd;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* styling for yoga instructors */
+ /* Fade-in animation */
+ .fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hover Zoom Effect */
+.zoom-img img {
+  transition: transform 0.4s ease;
+}
+
+.zoom-img:hover img {
+  transform: scale(1.05);
+}
+
+.card-custom {
+  border: none;
+  border-radius: 15px;
+  background-color: white;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.btn-custom {
+  background-color: #f0b90b;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 24px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-custom:hover {
+  background-color: #dfa100;
+}
+
+/*Grid images */
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.6);
+  transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* Styling for details and summary */
+details 
+{
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+summary 
+{
+  cursor: pointer;
+  font-weight: bold;
+}
+
+  summary::marker {
+    color: #f0b90b;
+  }
+
+  details[open] summary {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+  }
+
+  /* styling for map section */
+  .map-section {
+    background-color: #006A4E; /* Light beige background */
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin: 30px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-section h2 {
+    color: #6AFB92;
+    margin-bottom: 10px;
+    font-size: 28px;
+  }
+  
+  .map-section p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .map-button {
+    display: inline-block;
+    background-color: #FFFF33; /* Light pink */
+    color: #4B0082; /* Indigo */
+    padding: 12px 24px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+  }
+  
+  .map-button:hover {
+    background-color: #FFFF33;
+    color: #000;
+  }
+
+
+/* learn more button from section tag */
+.more-info-section {
+  background-color: #FFEFD5;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  color: #4A4A4A;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.more-info-section h3 {
+  color: #DC143C;
+  margin-bottom: 15px;
+}
+
+.more-info-section ul {
+  text-align: left;
+  padding-left: 20px;
+  list-style-type: "🧘 ";
+}
+
